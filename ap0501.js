@@ -27,10 +27,9 @@ function init() {
   // レンダラの設定
   const renderer = new THREE.WebGLRenderer();
   renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.shadowMap.enabled = true;
   renderer.setClearColor(0x406080);
   // レンダラに影の処理をさせる
-  
+  renderer.shadowMap.enabled = true;
   // Webページに描画領域を対応させる
   document.getElementById("WebGL-output")
     .appendChild(renderer.domElement);
